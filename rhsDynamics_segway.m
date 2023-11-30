@@ -16,7 +16,6 @@ u=controls(t,z,p);
 
 x_ddot=-u/((m+M)*r);
 
-%alpha=((m+M)*r*r*phiddot+(m+M)*r*l*cos(theta)*phiddot+m*g*l*sin(theta))/(I1);%-u/(I1+I2);
 
 alpha=(m*g*l*sin(theta)+(m+M)*(l*cos(theta)+r)*x_ddot)/(Ip+m*((r+L)^2)+Iw+M*r*r);
 %omega_dot=phiddot;
