@@ -42,19 +42,8 @@ t=sol.t;
 z_array=sol.z;
 %}
 
-%
 
 
-%%LQR
-
-m=p.m;
-
-A=[0,1,0,0;
-    m*g*l/(Ip+Iw),0,0,0;
-    0,0,0,1;
-    0,0,0,0];
-
-B=0;
 
 
 %%dynamics solution
